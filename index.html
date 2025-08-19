@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Image Uploader</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Upload Your Image</h1>
+        <form id="upload-form">
+            <input type="file" id="image-file" name="image" accept="image/*">
+            <button type="submit">Upload Image</button>
+        </form>
+        
+        <div class="result-box" style="display: none;">
+            <h2>Uploaded Image URL:</h2>
+            <p id="image-url"></p>
+            <a id="view-link" href="#" target="_blank">View Image</a>
+        </div>
+        
+        <div class="status-message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
